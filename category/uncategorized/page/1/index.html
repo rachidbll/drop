@@ -15,6 +15,7 @@
 <style id="woocommerce-inline-inline-css" type="text/css">
 .woocommerce form .form-row .required { visibility: visible; }
 </style>
+<link rel="stylesheet" id="wc-gateway-ppec-frontend-css" href="https://rachidbll.github.io/drop/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/css/wc-gateway-ppec-frontend.css" type="text/css" media="all">
 <link rel="stylesheet" id="font-awesome-css" href="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="simple-line-icons-css" href="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="magnific-popup-css" href="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css" type="text/css" media="all">
@@ -380,6 +381,12 @@
 		document.body.className = c;
 	</script>
 	<script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/drop\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/drop\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/rachidbll.github.io\/drop\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js"></script>
 <script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -399,7 +406,7 @@ var wc_cart_fragments_params = {"ajax_url":"\/drop\/wp-admin\/admin-ajax.php","w
 <script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
-var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"drop_down","sidrSource":"#sidr-close, #site-navigation, #top-bar-nav, #mobile-menu-search","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","wooCartStyle":"drop_down","ajax_url":"https:\/\/rachidbll.github.io\/drop\/wp-admin\/admin-ajax.php","cart_url":"https:\/\/rachidbll.github.io\/drop\/cart\/","cart_redirect_after_add":"yes","view_cart":"View cart","floating_bar":"on","grouped_text":"View products"};
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"drop_down","sidrSource":"#sidr-close, #site-navigation, #top-bar-nav, #mobile-menu-search","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","wooCartStyle":"drop_down","ajax_url":"https:\/\/rachidbll.github.io\/drop\/wp-admin\/admin-ajax.php","cart_url":"https:\/\/rachidbll.github.io\/drop\/cart\/","cart_redirect_after_add":"no","view_cart":"View cart","floating_bar":"on","grouped_text":"View products"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/js/main.min.js"></script>
@@ -421,5 +428,12 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/drop\/?wc-ajax=%%endpoin
 <script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/js/third/woo/woo-display-cart.min.js"></script>
 <script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/themes/oceanwp/assets/js/third/woo/woo-mini-cart.min.js"></script>
 
+<script type="text/javascript" data-namespace="paypal_sdk" src="https://www.paypal.com/sdk/js?client-id=AQbghYd-7mRPyimEriYScIgTnYUsLnr5wVnPnmfPaSzwKrUe3qNzfEc5hXr9Ucf_JG_HFAZpJMJYXMuk&merchant-id=CCQMSL7DGAVLU&intent=capture&locale=en_US&components=buttons,funding-eligibility&commit=false&currency=USD"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_ppec_context = {"use_checkout_js":"","environment":"production","locale":"en_US","page":null,"button_color":"gold","button_shape":"rect","button_label":"paypal","start_checkout_nonce":"9d538202ff","start_checkout_url":"\/drop\/?wc-ajax=wc_ppec_start_checkout","return_url":"https:\/\/rachidbll.github.io\/drop\/checkout\/","cancel_url":"https:\/\/rachidbll.github.io\/drop\/cart\/","generic_error_msg":"An error occurred while processing your PayPal payment. Please contact the store owner for assistance.","mini_cart_button_layout":"vertical","mini_cart_button_size":"responsive","mini_cart_button_label":"paypal","mini_cart_disallowed_methods":["CARD","CREDIT"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rachidbll.github.io/drop/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/js/wc-gateway-ppec-smart-payment-buttons.js"></script>
 </body>
 </html>
